@@ -5,9 +5,12 @@
     <title>My App</title>
     <link rel="stylesheet" href="css/style.css">
     <meta name="vewport" content="width=device-width, initial-scale=1">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   </head>
   <body>
 
+    <!-- hamburger menu -->
     <div id="myNav" class="overlay">
       <a href="javascript:void(0)" class="closebtn" id="closeNav">&times;</a>
       <div class="overlay-content">
@@ -21,6 +24,8 @@
 
     <span class="menuIcon" id ="openNav">&#9776; open</span>
 
+
+    <!-- lightbox  -->
     <h2 style="text-align:center">Lightbox</h2>
 
     <div class="row">
@@ -41,25 +46,32 @@
     <div id="myModal" class="modal">
       <span class="close cursor" id="closeModal">&times;</span>
       <div class="modal-content">
-
         <div class="mySlides">
           <div class="numbertext">1 / 4</div>
-          <img src="images/beach.jpg" style="width:100%">
+          <img src="images/beach.jpg" class="slideImages">
+          <img src="images/fashion.jpg" class="slideImages">
+          <img src="images/picnic.jpg" class="slideImages">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">2 / 4</div>
-          <img src="images/fashion.jpg" style="width:100%">
+          <img src="images/fashion.jpg" class="slideImages">
+          <img src="images/picnic.jpg" class="slideImages">
+          <img src="images/product.jpg" class="slideImages">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">3 / 4</div>
-          <img src="images/picnic.jpg" style="width:100%">
+          <img src="images/picnic.jpg" class="slideImages">
+          <img src="images/product.jpg" class="slideImages">
+          <img src="images/beach.jpg" class="slideImages">
         </div>
 
         <div class="mySlides">
           <div class="numbertext">4 / 4</div>
-          <img src="images/product.jpg" style="width:100%">
+          <img src="images/product.jpg" class="slideImages">
+          <img src="images/beach.jpg" class="slideImages">
+          <img src="images/fashion.jpg" class="slideImages">
         </div>
 
         <a class="prev" id="plusPrev">&#10094;</a>
@@ -69,23 +81,31 @@
           <p id="caption"></p>
         </div>
 
-
-        <div class="column">
-          <img class="demo cursor" src="images/beach.jpg" style="width:100%" alt="Beach">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/fashion.jpg" style="width:100%" alt="Fashion">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/picnic.jpg" style="width:100%" alt="Picnic">
-        </div>
-        <div class="column">
-          <img class="demo cursor" src="images/product.jpg" style="width:100%" alt="Product">
+        <div class="row">
+          <div class="column">
+            <img class="demo cursor" src="images/beach.jpg" style="width:100%" alt="Beach">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/fashion.jpg" style="width:100%" alt="Fashion">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/picnic.jpg" style="width:100%" alt="Picnic">
+          </div>
+          <div class="column">
+            <img class="demo cursor" src="images/product.jpg" style="width:100%" alt="Product">
+          </div>
         </div>
       </div>
     </div>
 
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 
+    <!-- popper -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+
+    <!-- bootstrap -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 
     <script src="js/script.js"></script>
 
